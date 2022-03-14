@@ -1,10 +1,19 @@
 html {
-    scroll-behavior: smooth;
-    --light-white: #FEFDF8;
     --cream: #EDE9E1;
     --dark-grey: #24241D;
+    --light-white: #FEFDF8;
     --orange: #CD6D06;
+    scroll-behavior: smooth;
   }
+
+.header {
+  background-image: linear-gradient(rgba(101, 101, 101, .35),rgba(101, 101, 101, .35)),url("../img/coffee.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -42,8 +51,8 @@ nav img {
 
 .nav-links ul li::after {
   background: #CD6D06;
-  display: block;
   content:"";
+  display: block;
   height: 2px;
   margin: auto;
   transition: 0.5s;
@@ -56,9 +65,9 @@ nav img {
 
 .text-box {
   color:#FEFDF8;
+  left: 138px;
   position: absolute;
   top: 300px;
-  left: 138px;
   width: 90%;
 }
 
@@ -70,7 +79,167 @@ nav img {
   font-size: 28px;
 }
 
+nav .fa {
+  display: none;
+}
+
+.two-column {
+  background-color: #FEFDF8;
+}
+
+img {
+  max-width: 100%;
+}
+  .column {
+    padding: 3rem;
+    width: 50%;
+}
+
+.column h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.column p {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+
+.menu-section {
+  background-color: var(--cream);
+  border-top: 35px solid var(--orange);
+}
+
+.menu-section h1 {
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.menus-container {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr;
+  margin-left: 140px;
+  margin-right: 138px;
+  margin-top: 140px;
+}
+
+.menus-container h2 {
+  border-bottom: 7px solid #cd6d06;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.menu {
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-size: 20px;
+}
+
+td {
+  padding: 1rem;
+}
+
+.location {
+  background-color: #FEFDF8;
+}
+
+img {
+  max-width: 100%;
+}
+  .column2 {
+    padding: 3rem;
+    width: 100%;
+}
+
+.column2 h2 {
+  border-bottom: 7px solid var(--orange);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.column2 h3 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.column2 p {
+  font-size: 20px;
+}
+
+footer {
+  background-color: var(--dark-grey);
+  color: var(--light-white);
+}
+
+footer .column3 {
+  padding: 5rem;
+}
+
+footer h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .menus-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu {
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .two-column {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .two-column2 {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem;
+  }
+}
+
 @media(max-width:700px) {
+  .text-box {
+    left: 75px;
+  }
   .text-box h1 {
     font-size: 40px;
   }
@@ -78,51 +247,26 @@ nav img {
     display: block;
   }
   .nav-links {
-    position: absolute;
     background:#CD6D06;
     height: 100vh;
-    width: 200px;
-    top: 0;
-    right: 0;
+    position: absolute;
+    right: -200px;
     text-align: left;
+    top: 0;
+    transition: 1s;
+    width: 200px;
     z-index:2;
+  }
+  nav .fa {
+    color: #FEFDF8;
+    cursor: pointer;
+    display: block;
+    font-size: 22px;
+    margin: 10px;
+  }
+  .nav-links ul {
+    padding: 30px;
   }
 }
 
-/*-- About --*/
 
-.about {
-  background-color: #FEFDF8;
-  color: #24241D;
-}
-
-.container h1 {
-  font-size: 60px;
-  font-weight: 700;
-  padding: 130px 150px 35px 150px;
-}
-
-.container p {
-  font-size: 20px;
-  font-weight: 300;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.image {
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-/*--- Color ---*/
-
-.colorblock {
-  background-color:#CD6D06;
-  height: 35px;
-  width: 100%;
-}
-
-.image2 {
-  align-items: right;
-  width: 600px;
-}

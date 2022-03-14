@@ -20,87 +20,288 @@
 <body>
   <!-- Add your content here -->
   <section class="header">
-    <style>
-      .header {
-        background-image: linear-gradient(rgba(101, 101, 101, .35),rgba(101, 101, 101, .35)),url("img/coffee.jpg");
-        background-position: center;
-        background-size: cover;
-        min-height: 100vh;
-        position: relative;
-        width: 100%;
-      }
-    </style>
     <nav>
       <a href="index.html"><img src="img/logo.png"></a>
-      <div class="nav-links">
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Directions</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <div class="nav-links" id="nav-links">
+        <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Menu</a></li>
+            <li><a href="">Directions</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
       </div>
+      <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="text-box">
       <h1>Charlie's Cafe</h1>
-      <p>Enjoy great tasting coffee and a quite<br>place to work at Charlie’s.</p>
+      <p>Enjoy great tasting coffee and a quiet place to work at Charlie’s.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-
-  <section class="about">
-    <div class="container">
-      <div class="text"></div>
-        <h1>Fresh and Local</h1>
-        <p>Charlie’s Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! Proudly serving Firecreek Coffee and featuring fresh European sandwiches and baked goods.</p><br>
-        <p>Come experience the difference! With three locations on campus, there is always a Charlie’s Cafe near! Charlie’s Café is located at the Hayden Library, Bio Design B Building and the College of Design.</p>
-      </div>
-      <div class="image">
-        <img src="img/coffee2-01.png" alt="Coffee at Charlie's">
-      </div>
+  <section class="two-column">
+  
+    <div class="column">
+      <h2>Fresh and Local</h2>
+      <p>Charlie’s Café, one of Sun Devil Dining’s local restaurant partners, brings the taste of Europe to ASU! Proudly serving Firecreek Coffee and featuring fresh European sandwiches and baked goods.</p>
+  <p>Come experience the difference! With three locations on campus, there is always a Charlie’s Cafe near! Charlie’s Café is located at the Hayden Library, Bio Design B Building and the College of Design.</p>
     </div>
-  </section>
-
-  <div class="colorblock"></div>
-
-  <div class="image2">
-    <img src="img/beans.png" alt="Coffee beans"> 
-  </div>
-
-  <section class="menu">
-    <div class="text2">
-      <h1>Menu</h1>
-      <h2>Espresso Drinks</h2>
-      <h3>Small/Large</h3>
-      <ul class="Espresso">
-        <li>Affogato</li>
-        <li>Americano</li>
-        <li>Blend</li>
-        <li>Brewed Coffee</li>
-        <li>Brewed Coffee</li>
-        <li>Caffe Latte</li>
-        <li>Caffe Mocha</li>
-        <li>Cappuccino</li>
-        <li>Chai</li>
-        <li>Cold Brew</li>
-        <li>Dirty Chai</li>
-        <li>Dirty Drips</li>
-        <li>Espresso</li>
-        <li>Macchiato</li>
-        <li>Nitro Cold Brew</li>
-      </ul>
-    </div>
-  </section>
-
-
-
-  <footer>
-    <p>
-      <span class="fa-brands fa-instagram"></span> 
-      </p>
     
-  </footer>
+    <div class="column">
+      <img src="img/aboutcoffee.png">
+    </div>
+  
+  </section>
+
+  <section class="menu-section">
+
+    <h1>Menu</h1>
+    
+      <section class="menus-container">
+    
+        <div class="menu">
+          <h2>Espresso Drinks</h2>
+          <table>
+        <tr>
+          <th></th>
+          <th>Small/Large</th>
+        </tr>
+        <tr>
+          <td>Affogato</td>
+          <td>5.95</td>
+        </tr>
+        <tr>
+          <td>Americano</td>
+          <td>3.00/4.00</td>
+        </tr>
+        <tr>
+          <td>Blend</td>
+          <td>5.95</td>
+        </tr>
+        <tr>
+          <td>Brewed Coffee</td>
+          <td>3.00/4.00</td>
+        </tr>
+        <tr>
+          <td>Caffe Latte</td>
+          <td>4.75/5.25</td>
+        </tr>
+        <tr>
+          <td>Caffe Mocha</td>
+          <td>4.75</td>
+        </tr>
+        <tr>
+          <td>Cappuccino</td>
+          <td>3.95/4.95</td>
+        </tr>
+        <tr>
+          <td>Chai</td>
+          <td>4.50</td>
+        </tr>
+        <tr>
+          <td>Cold Brew</td>
+          <td>4.50</td>
+        </tr>
+        <tr>
+          <td>Dirty Chai</td>
+          <td>5.95</td>
+        </tr>
+        <tr>
+          <td>Dirty Drips</td>
+          <td>2.75</td>
+        </tr>
+        <tr>
+          <td>Espresso</td>
+          <td>3.00</td>
+        </tr>
+        <tr>
+          <td>Macchiato</td>
+          <td>4.95</td>
+        </tr>
+        <tr>
+          <td>Nitro Cold Brew</td>
+          <td>4.95</td>
+        </tr>
+      </table>
+        </div>
+    
+        <div class="menu">
+          <h2>Other Drinks</h2>
+          <table>
+        <tr>
+          <th></th>
+          <th>Small/Large</th>
+        </tr>
+        <tr>
+          <td>Black Tea</td>
+          <td>3.00/4.50</td>
+        </tr>
+        <tr>
+          <td>Blended Tea</td>
+          <td>5.25</td>
+        </tr>
+        <tr>
+          <td>Green Tea</td>
+          <td>3.00/4.50</td>
+        </tr>
+        <tr>
+          <td>Hot Chocolate</td>
+          <td>3.00/3.95</td>
+        </tr>
+        <tr>
+          <td>Juices</td>
+          <td>3.95</td>
+        </tr>
+        <tr>
+          <td>Kombucha</td>
+          <td>4.75/5.50</td>
+        </tr>
+        <tr>
+          <td>Matcha</td>
+          <td>4.75</td>
+        </tr>
+        <tr>
+          <td>Naked Juice</td>
+          <td>4.00</td>
+        </tr>
+        <tr>
+          <td>Passion Tea</td>
+          <td>3.00/4.50</td>
+        </tr>
+        <tr>
+          <td>Passion Tea</td>
+          <td>3.00/4.50</td>
+        </tr>
+        <tr>
+          <td>Protein Shake</td>
+          <td>4.00</td>
+        </tr>
+        <tr>
+          <td>Red Bull</td>
+          <td>4.00</td>
+        </tr>
+        <tr>
+          <td>Red Bull Fusion</td>
+          <td>2.50</td>
+        </tr>
+        <tr>
+          <td>Soda</td>
+          <td>2.00</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td>4.75</td>
+        </tr>
+        <tr>
+          <td>Water</td>
+          <td>4.75</td>
+        </tr>
+        <tr>
+          <td>White Tea</td>
+          <td>3.00/4.50</td>
+        </tr>
+        <tr>
+          <td>Yerba Mate</td>
+          <td>3.65</td>
+        </tr>
+      </table>
+        </div>
+    
+        <div class="menu">
+          <h2>Paninis</h2>
+          <table>
+        <tr>
+          <th></th>
+          <th>7.95</th>
+        </tr>
+        <tr>
+          <td>Caprese</td>
+        </tr>
+        <tr>
+          <td>Italiano</td>
+        </tr>
+        <tr>
+          <td>Mediterranean Chicken</td>
+        </tr>
+        <tr>
+          <td>Milano</td>
+        </tr>
+        <tr>
+          <td>Seville</td>
+        </tr>
+        <tr>
+          <td>Turkey Florentine</td>
+        </tr>
+        <tr>
+          <td>Vegetarian</td>
+        </tr>
+      </table>
+        </div>
+    
+        <div class="menu">
+          <h2>Bakery</h2>
+          <table>
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>Bagel</td>
+          <td>3.25</td>
+        </tr>
+        <tr>
+          <td>Gelato</td>
+          <td>3.75/5.50/6.25</td>
+        </tr>
+        <tr>
+          <td>Grab & Go</td>
+          <td>7.25</td>
+        </tr>
+        <tr>
+          <td>Jimmy Dean</td>
+          <td>3.95</td>
+        </tr>
+        <tr>
+          <td>Muffins/Pastries</td>
+          <td>3.50</td>
+        </tr>
+      </table>
+        </div>
+    
+      </section>
+    </section>
+
+  <section class="location">
+    <section class="two-column2">
+      <div class="column2">
+       <img src="img/Maps2-02.png">
+     </div>
+     <div class="column2">
+       <h2>Location</h2>
+        <h3>Hours</h3>
+         <p>Monday-Friday: 7am-5pm</p>
+        <h3>Address</h3>
+         <p>Design North<br>
+            810 S. Forest Mall<br>
+            Tempe, AZ 85281</p>
+     </div>
+   </section>
+  </section>
+
+<footer>
+  <div class="column3">
+    <h4>Contact</h4>
+    <p>(480) 727-3463<br>
+      charlies@asu.edu</p>
+  </div>
+  <div class="column3">
+    <h4></h4>
+  </div>
+  <div class="column3">
+    <img src="img/logo.png"/>
+  </div>
+</footer>
+
 
   <!-- Load Scripts -->
   <script src="js/scripts.js"></script>
