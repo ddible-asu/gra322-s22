@@ -65,9 +65,9 @@ nav img {
 
 .text-box {
   color:#FEFDF8;
-  left: 138px;
+  left: 170px;
   position: absolute;
-  top: 300px;
+  top: 350px;
   width: 90%;
 }
 
@@ -83,6 +83,10 @@ nav .fa {
   display: none;
 }
 
+.about {
+  background-color: #FEFDF8;
+}
+
 .two-column {
   background-color: #FEFDF8;
 }
@@ -92,7 +96,6 @@ img {
 }
   .column {
     padding: 3rem;
-    width: 50%;
 }
 
 .column h2 {

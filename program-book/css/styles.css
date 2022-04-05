@@ -1,0 +1,60 @@
+body
+{
+  font-family: 'Playfair+Display', serif;
+  font-weight: 400;
+  margin: 40px;
+}
+
+header {
+  margin-top: 3rem;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+h1 {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.main {
+padding-top: 2.5rem;
+}
+
+.photo1 {
+  padding-bottom: 38px;
+}
+
+.photo2 {
+  padding-bottom: 38px;
+}
+
+.photo3 {
+  padding-bottom: 38px;
+}
+
+.photo4 {
+  padding-bottom: 38px;
+}
+
+.photo5 {
+  padding-bottom: 38px;
+}
+
+.photo6 {
+  padding-bottom: 38px;
+}
+
+footer {
+  padding-bottom: 30px;
+}
+
+footer p {
+  font-size: 12.80px;
+}
