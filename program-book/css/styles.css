@@ -1,55 +1,59 @@
 body
 {
-  font-family: 'Playfair+Display', serif;
-  font-weight: 400;
-  margin: 40px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 20px;
 }
 
 header {
-  margin-top: 3rem;
-  border-bottom: 1px solid black;
+  margin-top: 50px;
   display: flex;
+  padding-bottom: 30px;
 }
 
 h1 {
-    color: #000000;
-    font-size: 20px;
-    font-weight: 400;
-    padding-bottom: 1.5rem;
-    text-decoration: none;
+  font-weight: 600;
+  font-size: 31.25px;
 }
 
 .menu {
   margin-left: auto;
 }
 
-.main {
-padding-top: 2.5rem;
-padding-bottom: 38px;
+button {
+  width: 40px;
+  border: none;
+  background-color: white;
 }
 
-.photo1 {
-  padding-bottom: 38px;
+h2 {
+  font-weight: 600;
+  font-size: 31.25px;
 }
 
-.photo2 {
-  padding-bottom: 38px;
+h3 {
+  color: #585457;
+  font-weight: 500;
+  font-size: 16x;
+  padding-bottom: 30px
 }
 
-.photo3 {
-  padding-bottom: 38px;
+h4 {
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 15px;
 }
 
-.photo4 {
-  padding-bottom: 38px;
+h5 {
+  font-weight: 400;
+  font-size: 12px;
+  padding-bottom: 30px;
 }
 
-.photo5 {
-  padding-bottom: 38px;
-}
-
-.photo6 {
-  padding-bottom: 38px;
+p {
+  color: #313131;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
 }
 
 footer {
