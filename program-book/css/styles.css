@@ -1,65 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
 body
 {
   font-family: 'Open Sans', sans-serif;
-  margin: 20px;
 }
 
 header {
   margin-top: 50px;
-  display: flex;
   padding-bottom: 30px;
 }
 
-h1 {
-  font-weight: 600;
+nav {
+  font-weight: 300;
   font-size: 31.25px;
 }
 
-.menu {
-  margin-left: auto;
+nav ul {
+  list-style: none;
+  padding-left: 20px;
 }
 
-button {
-  width: 40px;
-  border: none;
-  background-color: white;
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 31.25px;
 }
 
-h3 {
-  color: #585457;
-  font-weight: 500;
-  font-size: 16x;
-  padding-bottom: 30px
-}
-
 h4 {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 15px;
   padding-top: 15px;
 }
 
 h5 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 12px;
   padding-bottom: 30px;
 }
 
-p {
-  color: #313131;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.75;
+.subtitle {
+  max-width: 343px;
+  padding-bottom: 20px;
+}
+
+.subtitle p {
+  padding-top: 10px;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.home {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.home-images {
+  display: grid;
+  gap: 1rem;
+}
+
+.final {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.final-image {
+  display: grid;
 }
 
 footer {
   padding-bottom: 30px;
+  padding-left: 20px;
 }
 
 footer p {
   font-size: 12.80px;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    margin: 5rem;
+  }
+  .home-images {
+    grid-template-columns: 1fr;
+  }
+  .final {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    margin: 5rem;
+  }
+  .final-image {
+    grid-template-columns: 1fr;
+  }
+  .subtitle { 
+    max-width: 210px;
+  }
+  header {
+    padding-left: 80px;
+  }
+  footer {
+    padding-left: 90px;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .home {
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+  }
+  .home-images {
+    grid-template-columns: 1fr 1fr;
+  }
+  .final {
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+  }
+  .final-image {
+    grid-template-columns: 1fr;
+  }
+  .subtitle { 
+    max-width: 250px;
+  }
+  h4 {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+  h5 {
+    font-size: 15px;
+    padding-bottom: 30px;
+  }
+  header {
+    padding-left: 75px;
+  }
+  footer {
+    padding-left: 90px;
+  } 
 }
